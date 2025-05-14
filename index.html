@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global AI Summit 2025 - Shaping the Future of Artificial Intelligence</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-inter">
+    <!-- SVG Filters -->
+    <svg class="hidden">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Hero Section -->
+    <header class="h-screen relative overflow-hidden flex flex-col">
+        <!-- Navigation -->
+        <nav class="w-full py-8 px-6 fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="mainNav">
+            <div class="flex justify-between items-center max-w-7xl mx-auto">
+                <div class="gradient-button px-8 py-3 rounded-lg">
+                    <span class="text-3xl font-bold gradient-text-static drop-shadow-lg">AI SUMMIT 2025</span>
+                </div>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="#about" class="gradient-button px-8 py-3 rounded-lg nav-link">
+                        <span class="relative z-10 text-lg font-medium">About</span>
+                    </a>
+                    <a href="#mission" class="gradient-button px-8 py-3 rounded-lg nav-link">
+                        <span class="relative z-10 text-lg font-medium">Mission</span>
+                    </a>
+                    <a href="#contact" class="gradient-button px-8 py-3 rounded-lg nav-link">
+                        <span class="relative z-10 text-lg font-medium">Contact</span>
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <button class="md:hidden gradient-button px-4 py-2 rounded-lg" id="mobileMenuBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div class="flex-1 flex items-center justify-center">
+            <div class="container max-w-7xl mx-auto px-6">
+                <div class="text-center">
+                    <h1 class="text-7xl md:text-9xl font-bold mb-8 gradient-text-static cursor-pointer">
+                        Global AI Summit
+                    </h1>
+                    <p class="text-2xl md:text-3xl mb-12 gradient-text-static cursor-pointer">
+                        Where Innovation Meets Intelligence
+                    </p>
+                    <div class="text-xl md:text-2xl gradient-text-static cursor-pointer max-w-3xl mx-auto leading-relaxed mb-12">
+                        Join industry leaders, researchers, and innovators at the forefront of artificial intelligence
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="#register" class="gradient-button px-12 py-4 rounded-lg text-xl font-semibold hover:scale-105 transform transition-all duration-300">
+                            <span class="relative z-10">Register Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="pt-32 pb-20 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent pointer-events-none"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-24 mt-4 text-center heading-gradient px-4 max-w-4xl mx-auto leading-relaxed" data-text="Shaping the Future of AI">
+                Shaping the Future of AI
+            </h2>
+            
+            <div class="flex flex-col items-center max-w-4xl mx-auto">
+                <div class="w-full space-y-8 text-center mb-16">
+                    <div class="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
+                        <h3 class="text-2xl font-semibold mb-4 heading-gradient" data-text="Global Innovation Hub">Global Innovation Hub</h3>
+                        <p class="text-xl text-gray-300 leading-relaxed reveal-text">
+                            Join the world's most influential AI conference, where industry leaders, researchers, and innovators converge to shape the next era of artificial intelligence. Experience groundbreaking discussions and forge connections that will define the future of technology.
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                        <div class="stat-card rounded-xl p-8 backdrop-blur-sm">
+                            <div class="text-5xl font-bold gradient-text-static">5000+</div>
+                            <div class="text-xl gradient-text-static">Expected Participants</div>
+                        </div>
+                        <div class="stat-card rounded-xl p-8 backdrop-blur-sm">
+                            <div class="text-5xl font-bold gradient-text-static">50+</div>
+                            <div class="text-xl gradient-text-static">Industry Leaders</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Grid -->
+                <div class="grid md:grid-cols-3 gap-8 w-full max-w-4xl mx-auto">
+                    <div class="feature-card bg-black/30 rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 reveal-text text-center">
+                        <div class="text-blue-400 mb-4 flex justify-center">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Cutting-edge Insights</h4>
+                        <p class="text-gray-400">Latest breakthroughs and innovations in AI technology and research</p>
+                    </div>
+                    
+                    <div class="feature-card bg-black/30 rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 reveal-text text-center">
+                        <div class="text-purple-400 mb-4 flex justify-center">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Networking</h4>
+                        <p class="text-gray-400">Connect with industry leaders and innovators shaping the future</p>
+                    </div>
+                    
+                    <div class="feature-card bg-black/30 rounded-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/20 reveal-text text-center">
+                        <div class="text-pink-400 mb-4 flex justify-center">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Workshops</h4>
+                        <p class="text-gray-400">Hands-on sessions with cutting-edge AI tools and technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="py-32 bg-black relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-24 text-center heading-gradient">
+                Featured Speakers
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <!-- Speaker 1 -->
+                <div class="feature-card p-6 rounded-xl backdrop-blur-sm">
+                    <div class="relative mb-6 overflow-hidden rounded-xl aspect-square">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
+                        <img src="https://source.unsplash.com/random/400x400?portrait=1" alt="Speaker 1" class="w-full h-full object-cover transform hover:scale-110 transition-all duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 gradient-text-static">Dr. Sarah Chen</h3>
+                    <p class="text-gray-400 mb-4">AI Research Director, TechCorp</p>
+                    <p class="text-gray-300">Leading expert in machine learning and neural networks</p>
+                </div>
+
+                <!-- Speaker 2 -->
+                <div class="feature-card p-6 rounded-xl backdrop-blur-sm">
+                    <div class="relative mb-6 overflow-hidden rounded-xl aspect-square">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20"></div>
+                        <img src="https://source.unsplash.com/random/400x400?portrait=2" alt="Speaker 2" class="w-full h-full object-cover transform hover:scale-110 transition-all duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 gradient-text-static">Prof. Michael Torres</h3>
+                    <p class="text-gray-400 mb-4">Head of AI Ethics, Global Tech University</p>
+                    <p class="text-gray-300">Pioneer in responsible AI development</p>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="feature-card p-6 rounded-xl backdrop-blur-sm">
+                    <div class="relative mb-6 overflow-hidden rounded-xl aspect-square">
+                        <div class="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-blue-500/20"></div>
+                        <img src="https://source.unsplash.com/random/400x400?portrait=3" alt="Speaker 3" class="w-full h-full object-cover transform hover:scale-110 transition-all duration-500">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 gradient-text-static">Dr. Emily Zhang</h3>
+                    <p class="text-gray-400 mb-4">Chief AI Scientist, Future Labs</p>
+                    <p class="text-gray-300">Expert in deep learning and computer vision</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-32 bg-gray-900 relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-bold mb-24 text-center heading-gradient">
+                Conference Timeline
+            </h2>
+            <div class="max-w-4xl mx-auto relative">
+                <!-- Timeline line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"></div>
+                
+                <!-- Day 1 -->
+                <div class="relative mb-16">
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h3 class="text-2xl font-bold gradient-text-static">Day 1 - Opening</h3>
+                            <p class="text-gray-400">March 15, 2025</p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 glow-effect"></div>
+                        <div class="w-1/2 pl-8">
+                            <ul class="space-y-2 text-gray-300">
+                                <li>9:00 - Opening Ceremony</li>
+                                <li>10:30 - Keynote Speech</li>
+                                <li>14:00 - AI Ethics Panel</li>
+                                <li>16:30 - Networking Session</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="relative mb-16">
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h3 class="text-2xl font-bold gradient-text-static">Day 2 - Deep Dive</h3>
+                            <p class="text-gray-400">March 16, 2025</p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-purple-500 glow-effect"></div>
+                        <div class="w-1/2 pl-8">
+                            <ul class="space-y-2 text-gray-300">
+                                <li>9:00 - Technical Workshops</li>
+                                <li>11:30 - Research Presentations</li>
+                                <li>14:00 - Industry Applications</li>
+                                <li>16:30 - Innovation Showcase</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="relative">
+                    <div class="flex items-center mb-4">
+                        <div class="w-1/2 pr-8 text-right">
+                            <h3 class="text-2xl font-bold gradient-text-static">Day 3 - Future Vision</h3>
+                            <p class="text-gray-400">March 17, 2025</p>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-pink-500 glow-effect"></div>
+                        <div class="w-1/2 pl-8">
+                            <ul class="space-y-2 text-gray-300">
+                                <li>9:00 - Future Trends Panel</li>
+                                <li>11:30 - Startup Pitches</li>
+                                <li>14:00 - Closing Keynote</li>
+                                <li>16:30 - Awards Ceremony</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-20 bg-black relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center heading-gradient" data-text="Our Mission">Our Mission</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-900 rounded-lg transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/50">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400 reveal-text">Connect</h3>
+                    <p class="text-gray-300 reveal-text">Bringing together global AI leaders and innovators to foster collaboration</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-lg transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400 reveal-text">Innovate</h3>
+                    <p class="text-gray-300 reveal-text">Showcasing cutting-edge AI technologies and breakthrough research</p>
+                </div>
+                <div class="p-6 bg-gray-900 rounded-lg transform hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/50">
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400 reveal-text">Impact</h3>
+                    <p class="text-gray-300 reveal-text">Driving meaningful change through AI applications across industries</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center reveal-text">Get in Touch</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6 reveal-text">
+                    <div class="transform hover:scale-105 transition-all duration-300">
+                        <input type="email" placeholder="Your Email" class="w-full p-4 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 focus:shadow-lg focus:shadow-blue-500/50">
+                    </div>
+                    <div class="transform hover:scale-105 transition-all duration-300">
+                        <textarea placeholder="Message" rows="4" class="w-full p-4 bg-black border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 focus:shadow-lg focus:shadow-blue-500/50"></textarea>
+                    </div>
+                    <button class="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-bold hover:opacity-90 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-black border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p class="reveal-text">&copy; 2025 Global AI Summit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
